@@ -13,17 +13,10 @@ import Settings from  "./components/Pages/DashboardPages/Settings.js"
 
 import AddOperationPage from "./components/Pages/DashboardPages/AddOperationsPage.js"
 import OperationsTable from "./components/Pages/DashboardPages/MyOperations.js"
-
-import AddRoomPage from "./components/Pages/DashboardPages/AddRoomPage.js"
-import RoomsTable from "./components/Pages/DashboardPages/MyRooms.js"
-
-import MyContactRequests from "./components/Pages/DashboardPages/MyContactRequests.js"
-
 // importing from my clinic pages
 import AboutUs from "./components/Pages/MyClinicPages/AboutUs.js"
 import TeamPage from "./components/Pages/MyClinicPages/TeamPage.js"
 import Login from "./components/Pages/MyClinicPages/Login.js"
-import ContactUsPage from "./components/Pages/MyClinicPages/ContactUsPage.js"
 import BookAppointment from "./components/Pages/MyClinicPages/BookAppointment.js"
 import OperationsPages from "./components/Pages/MyClinicPages/OperationsPage.js"
 import JoinPatient from "./components/Pages/MyClinicPages/JoinPatient.js"
@@ -31,8 +24,6 @@ import JoinWorker from "./components/Pages/MyClinicPages/JoinWorker.js"
 import JoinClinic from "./components/Pages/MyClinicPages/JoinDentist.js"
 import MainPage from "./components/Pages/MyClinicPages/MainPage.js"
 import UserProfilePage from './components/Pages/DashboardPages/UserProfilePage.js'
-import MeetTheTeamPage from "./components/Pages/MyClinicPages/MeetTheTeamPage.js"
-import ContactUs from './components/myclinic/ContactUs.js'
 
 export default function App() {
   return (
@@ -47,8 +38,6 @@ export default function App() {
         <Route path="joinpatient/" element={<JoinPatient />} />
         <Route path="joinworker/" element={<JoinWorker />} />
         <Route path="joinclinic/" element={<JoinClinic />} />
-        <Route path="ourteam/" element={<MeetTheTeamPage />} />
-        <Route path="contactus/" element={<ContactUsPage />} />
 
         
         <Route path="aftervisit/" element={<AfterVisitPage />} />
@@ -62,13 +51,8 @@ export default function App() {
         <Route path="user/" element={<UserProfilePage />} />
         <Route path="addoperation/" element={<AddOperationPage />} />
         <Route path="myoperations/" element={<OperationsTable />} />
-        <Route path="mycontactrequests/" element={<MyContactRequests />} />
-
-
-        <Route path="addroom/" element={<AddRoomPage />} />
-        <Route path="myrooms/" element={<RoomsTable />} />
-
       </Routes>
     </div>
   );
 }
+

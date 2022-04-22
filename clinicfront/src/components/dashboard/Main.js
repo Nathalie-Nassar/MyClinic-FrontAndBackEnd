@@ -1,4 +1,3 @@
-import styles from './styles.css';
 import { Link } from 'react-router-dom'
 import React from 'react'
 
@@ -10,43 +9,21 @@ export default function Main(props) {
     var is_secretary = props.is_secretary;
 
     var totalBalance = <></>
-    if (!is_admin && !is_nurse ) { 
+
+    if (!is_admin && !is_nurse) {
         totalBalance = <li>
             <i className="bx bxs-dollar-circle" />
             <span className="text">
-                <h3>$2543</h3>
+                <h3>$...</h3>
                 <p>Total Balance</p>
             </span>
         </li>
     }
+
     return (<>
         <section id="content">
-            {/* <nav>
-                    <a href="javascript:void(0);" data-target="basicSidebar" data-placement="left" data-position="slidepush" is-open="true" is-open-width="1000" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pmd-sidebar-toggle"><i className="bx bx-menu" /></a>
-                    <a class="navbar-brand nav-link" href="#">
-                        Categories
-                    </a>
-                    <form action="#">
-                        <div className="form-input">
-                            <input type="search" placeholder="Search..." />
-                            <button type="submit" className="search-btn">
-                                <i className="bx bx-search" />
-                            </button>
-                        </div>
-                    </form>
-                    <input type="checkbox" id="switch-mode" hidden="" />
-                    <label htmlFor="switch-mode" className="switch-mode" />
-                    <a href="#" className="notification">
-                        <i className="bx bxs-bell" />
-                        <span className="num">8</span>
-                    </a>
-                    <a href="#" className="profile">
-                        <img src="assets/dashboard/img/people.png" />
-                    </a>
-                </nav>
-                <br /> */}
 
-            <main>
+            <main >
                 <div className="head-title">
                     <div className="left">
                         <h1>Dashboard</h1>
@@ -68,7 +45,7 @@ export default function Main(props) {
                         <Link to={"../bookappointment"}><span className="text" style={{ color: "white" }}>Add Appointment </span></Link>
                     </a>
                 </div>
-                <div>
+                <div >
                     <ul className="box-info">
                         <li>
                             <i className="bx bxs-calendar-check" />
@@ -84,6 +61,8 @@ export default function Main(props) {
                                 <p>All Patient</p>
                             </span>
                         </li>
+
+
                         {totalBalance}
                     </ul>
 
@@ -98,3 +77,5 @@ export default function Main(props) {
     </>
     );
 }
+
+

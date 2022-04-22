@@ -61,21 +61,17 @@ function Sidebar(props) {
 						<FaIcons.FaBars onClick={showSidebar} />
 					</NavIcon>
 					<section id="content">
-
-						<h1
-							style={{
-								margin:"auto",
-								textAlign: "center",
-								marginLeft: "-50px",
-								marginTop: "20px",
-								color: "#26B0C2"
-							}}
-						>
-							MyClinic
-						</h1>
+						<img src="assets/img/logo_2.jpeg" class="img-fluid" alt="Responsive image" style={{
+							marginLeft: "-250px",
+							marginTop: "10px",
+							width: "130px",
+							borderRadius: " 8px",
+							height: "auto",
+							objectPosition: " center top",
+						}} />
 					</section>
 				</Nav>
-				<SidebarNav sidebar={sidebar}>
+				<SidebarNav sidebar={sidebar} class="w3-sidebar w3-card">
 					<SidebarWrap>
 						<NavIcon to="#">
 							<AiIcons.AiOutlineClose onClick={showSidebar} />

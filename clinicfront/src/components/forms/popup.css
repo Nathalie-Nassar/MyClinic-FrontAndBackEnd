@@ -1,4 +1,4 @@
-.popup{
+.popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,14 @@
     align-items: center;
 }
 
-.popup-inner{
+.popup {
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+
+.popup-inner {
+    overflow-y: scroll !important;
+    overflow-x: hidden;
     position: relative;
     padding: 32px;
     width: 100%;
@@ -16,7 +23,7 @@
     background-color: aliceblue;
 }
 
-.popup-inner .close-btn{
+.popup-inner .close-btn {
     position: relative;
     top: 16px;
     right: 16px;

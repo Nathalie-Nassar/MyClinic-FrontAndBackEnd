@@ -1,0 +1,17 @@
+import React from 'react'
+import AfterVisit from './AfterVisit';
+import "./popup.css"
+
+export default function PopupVisitSummary(props) {
+    return (
+        (props.trigger) ? (
+            <div className='popup'>
+                <div className='popup-inner'>
+                    <button className='close-btn btn btn-danger' onClick={() => props.setTrigger(false)}>Close</button>
+                    {props.children}
+                    <AfterVisit></AfterVisit>
+                </div>
+            </div>
+        ) : ""
+    );
+}

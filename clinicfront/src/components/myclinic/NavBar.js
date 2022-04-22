@@ -19,7 +19,7 @@ export default function NavBar(props) {
 
     joinworker = "./joinworker";
     joinclinic = "./joinclinic";
-    dev="./ourteam"
+    dev = "./ourteam"
   } else {
     team = "../team";
     about = "../about";
@@ -38,8 +38,11 @@ export default function NavBar(props) {
       <div className="container">
         <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
           <a className="navbar-brand">
-            <h1 className="m-0 text-primary">
-              <Link to={"../"}> MyClinic</Link></h1>
+            <img src="assets/img/logo_1.jpeg" class="img-fluid" alt="Responsive image" style={{
+              objectFit: 'cover',
+              width: '65%',
+              height: '5%'
+            }} />
           </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +55,7 @@ export default function NavBar(props) {
                     <Link to={"../"}> Home</Link>
                   </a>
                 </li>
-                
+
                 <li className="nav-item">
                   <a className="nav-item nav-link ">
                     <Link to={operations}> Operations</Link>
@@ -69,11 +72,6 @@ export default function NavBar(props) {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-item nav-link ">
-                    <Link to={dev}> Developers</Link>
-                  </a>
-                </li>
-                <li className="nav-item">
                   <a className="nav-item nav-link">
                     <Link to={login}> Log in</Link>
                   </a>
@@ -85,8 +83,8 @@ export default function NavBar(props) {
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <Link class="dropdown-item" to={join}> As a Patient </Link>
-                      <Link class="dropdown-item" to={joinclinic}> As a Clinic </Link>
-                      <Link class="dropdown-item" to={joinworker}> As a Worker </Link>
+                      <Link class="dropdown-item" to={joinclinic}> As a Clinic/Dr </Link>
+                      <Link class="dropdown-item" to={joinworker}> As an Employee </Link>
                     </div>
                   </div>
                 </li>

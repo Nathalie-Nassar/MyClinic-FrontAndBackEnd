@@ -1,9 +1,42 @@
 import { Link } from 'react-router-dom'
 import styles from 'styles.css'
+import { CCardBody, CCardHeader, CCardTitle, CCardText, CCard } from '@coreui/react'
+import React from 'react'
 
-export default function Dash() { 
+export default function Dash() {
     return (
         <main>
+
+            {[
+                { color: 'primary', textColor: 'white' },
+                { color: 'secondary', textColor: 'white' },
+                { color: 'success', textColor: 'white' },
+                { color: 'danger', textColor: 'white' },
+                { color: 'warning' },
+                { color: 'info', textColor: 'white' },
+                { color: 'light' },
+                { color: 'dark', textColor: 'white' },
+            ].map((item, index) => (
+                <CCard
+                    color={item.color}
+                    textColor={item.textColor}
+                    className="mb-3"
+                    style={{ maxWidth: '18rem' }}
+                    key={index}
+                >
+                    <CCardHeader>Header</CCardHeader>
+                    <CCardBody>
+                        <CCardTitle>{item.color} card title</CCardTitle>
+                        <CCardText>
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </CCardText>
+                    </CCardBody>
+                </CCard>
+            ))}
+
+
+
             <div className="head-title">
                 <div className="left">
                     <h1>Dashboard</h1>
@@ -21,12 +54,16 @@ export default function Dash() {
                         </li>
                     </ul>
                 </div>
+
                 <a href="#" className="btn-download">
                     <Link to={"../bookappointment"}><span className="text" style={{ color: "white" }}>Add Appointment </span></Link>
                 </a>
             </div>
+
+
+
             <div>
-                <ul className="box-info">
+                <ul className="box-info col-12">
                     <li>
                         <i className="bx bxs-calendar-check" />
                         <span className="text">
@@ -69,7 +106,7 @@ export default function Dash() {
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="assets/dashboard/img/people.png" alt=""/>
+                                    <img src="assets/dashboard/img/people.png" alt="" />
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2020</td>
@@ -77,46 +114,8 @@ export default function Dash() {
                                     <span className="status completed">Completed</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <img src="assets/dashboard/img/people.png" alt="" />
-                                    <p>Melhem Rahmeh</p>
-                                </td>
-                                <td>18-11-2021</td>
-                                <td>
-                                    <span className="status pending">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="assets/dashboard/img/people.png"alt="" />
-                                    <p>Nathalie Nassar</p>
-                                </td>
-                                <td>19-05-2022</td>
-                                <td>
-                                    <span className="status process">Process</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="assets/dashboard/img/people.png" alt=""/>
-                                    <p>Mohammad Lahib</p>
-                                </td>
-                                <td>01-07-2021</td>
-                                <td>
-                                    <span className="status pending">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="assets/dashboard/img/people.png" alt=""/>
-                                    <p>Israa Diab</p>
-                                </td>
-                                <td>11-08-2022</td>
-                                <td>
-                                    <span className="status completed">Completed</span>
-                                </td>
-                            </tr>
+
+
                         </tbody>
                     </table>
                 </div>

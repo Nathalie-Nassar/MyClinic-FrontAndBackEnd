@@ -15,12 +15,12 @@ export default function MeetTheTeam() {
                 <div className="">
                     <div className="text-center mx-auto mb-5">
                         <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Our Team</h5>
-                        <h1 className="display-4">Meet the Developers</h1>
+                        <h1 className="display-4">Meet the Team</h1>
                     </div>
                     <div className="owl-carousel team-carousel position-relative">
 
                         <div className="team-item" >
-                            <div className="row g-0 bg-light rounded overflow-hidden" style={left}>
+                            <div className="row g-0 bg-light rounded overflow-auto" style={left}>
                                 <div className="col-12 col-sm-5 h-100">
                                     <img className="img-fluid h-100" src="assets/img/Team/israa.jpg" alt="" style={{ objectFit: 'cover' }} />
                                 </div>
@@ -35,12 +35,13 @@ export default function MeetTheTeam() {
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f" /></a>
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i className="fab fa-linkedin-in" /></a>
                                     </div>
+                                    <br></br><br></br>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div className="team-item">
-                            <div className="row g-0 bg-light rounded overflow-hidden" style={left}>
+                            <div className="row g-0 bg-light rounded overflow-auto" style={left}>
                                 <div className="col-12 col-sm-5 h-100">
                                     <img className="img-fluid h-100" src="assets/img/Team/melhem.jpg" style={{ objectFit: 'cover' }} />
                                 </div>
@@ -55,11 +56,13 @@ export default function MeetTheTeam() {
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f" /></a>
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i className="fab fa-linkedin-in" /></a>
                                     </div>
+                                    <br></br><br></br>
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="team-item" >
-                            <div className="row g-0 bg-light rounded overflow-hidden" style={left}>
+                            <div className="row g-0 bg-light rounded overflow-auto" style={left}>
                                 <div className="col-12 col-sm-5 h-100">
                                     <img className="img-fluid h-100" src="assets/img/Team/lahib.jpg" style={{ objectFit: 'cover' }} />
                                 </div>
@@ -74,11 +77,13 @@ export default function MeetTheTeam() {
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f" /></a>
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i className="fab fa-linkedin-in" /></a>
                                     </div>
+                                    <br></br><br></br>
                                 </div>
                             </div>
                         </div>
+                       
                         <div className="team-item" >
-                            <div className="row g-0 bg-light rounded overflow-hidden" style={left}>
+                            <div className="row g-0 bg-light rounded overflow-auto" style={left}>
                                 <div className="col-12 col-sm-5 h-100">
                                     <img className="img-fluid h-100" src="assets/img/Team/nathalie.jpg" style={{ objectFit: 'cover' }} />
                                 </div>
@@ -86,22 +91,25 @@ export default function MeetTheTeam() {
                                     <div className="mt-auto p-4">
                                         <h3>Nathalie Nassar</h3>
                                         <h6 className="fw-normal fst-italic text-primary mb-4">Scrum Master and Front End Developer</h6>
-                                        <p className="m-0">Description:</p>
+                                        <p className="m-0">Description: A computer scientist interested in software engineering and machine learning. I am still a junior at the American University of Beirut</p>
                                     </div>
                                     <div className="d-flex mt-auto border-top p-4">
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-twitter" /></a>
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f" /></a>
                                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-linkedin-in" /></a>
-
                                     </div>
+                                    <br></br><br></br>
                                 </div>
                             </div>
                         </div>
 
                         <br />
                     </div>
+                    
                 </div>
             </div>
+            <br></br><br></br>
+            <br></br><br></br>
         </section>
     );
 }

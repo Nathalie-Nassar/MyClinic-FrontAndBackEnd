@@ -32,7 +32,6 @@ export default function SignUpPatient() {
 
                                     <div className="col-12" style={{ "width": "70%", "margin": "auto" }}>
                                         <br /><br />
-                                        
                                         <button className="btn btn-primary w-100 py-3" type="submit">Create Account</button>
                                     </div>
                                 </div>

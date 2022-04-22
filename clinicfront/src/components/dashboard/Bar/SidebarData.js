@@ -5,7 +5,6 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import * as BiIcons from "react-icons/bi";
 import * as BsIcons from "react-icons/bs";
-import * as MdIcons from "react-icons/md";
 
 
 export default function SidebarData(is_dentist, is_admin, is_nurse, is_secretary) { 
@@ -91,36 +90,11 @@ export default function SidebarData(is_dentist, is_admin, is_nurse, is_secretary
 				],
 			},
 			{
-				title: "Rooms",
-				path: "",
-
-				icon: <FaIcons.FaDoorOpen />,
-				iconClosed: <RiIcons.RiArrowDownSFill />,
-				iconOpened: <RiIcons.RiArrowUpSFill />,
-
-				subNav: [
-					{
-						title: "My Rooms",
-						path: "/myrooms",
-						icon: <BsIcons.BsFillDoorOpenFill />,
-					},
-					{
-						title: "Add Room",
-						path: "/addroom",
-						icon: <BiIcons.BiDoorOpen />,
-					},
-				],
-			},
-			{
-				title: "After Visit Summary",
+				title: "Visit Summary",
 				path: "/aftervisit",
 				icon: <AiIcons.AiOutlineForm />,
 			},
-			{
-				title: "Contact Requests",
-				path: "/mycontactrequests",
-				icon: <MdIcons.MdContactPhone />,
-			},
+
 			{
 				title: "Settings",
 				path: "/profile",
